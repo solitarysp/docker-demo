@@ -1,0 +1,12 @@
+# Sử dụng version 3.3 cho nó mới
+version: '3.3'
+
+services:
+  nginx:
+    build: .
+    image: demo-ngix-spa-404
+    container_name: demo-ngix-spa-404
+    ports:
+      - "802:80"
+    volumes:
+      - ./html:/var/www/html
