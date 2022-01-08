@@ -9,4 +9,4 @@ services:
     ports:
       - "803:80"
     volumes:
-      - ./html:/var/www/html
+      - ../code-fe/dist:/var/www/html
